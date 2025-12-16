@@ -1,0 +1,30 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con gradiente púrpura/índigo -->
+  <rect width="32" height="32" rx="8" fill="url(#bgGradient)"/>
+  
+  <!-- Letra S estilizada como forja/yunque -->
+  <path 
+    d="M10 10C10 8.5 11.5 7 14 7C17 7 19 8.5 19 10.5C19 12.5 17 13.5 15 14.5L12 16C10 17 9 18.5 9 20C9 22 11 24 14.5 24C18 24 20 22.5 20 20.5" 
+    stroke="white" 
+    stroke-width="3" 
+    stroke-linecap="round"
+    fill="none"
+  />
+  
+  <!-- Martillo pequeño formando la F -->
+  <rect x="20" y="8" width="4" height="2" rx="1" fill="#FCD34D"/>
+  <rect x="21" y="7" width="2" height="10" rx="1" fill="white"/>
+  
+  <!-- Chispas de conocimiento -->
+  <circle cx="7" cy="12" r="1.5" fill="#FCD34D" opacity="0.9"/>
+  <circle cx="25" cy="18" r="1.2" fill="#FCD34D" opacity="0.8"/>
+  <circle cx="8" cy="20" r="1" fill="#FBBF24" opacity="0.7"/>
+  
+  <!-- Gradiente de fondo -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+</svg>
