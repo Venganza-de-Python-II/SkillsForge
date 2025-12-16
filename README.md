@@ -47,7 +47,7 @@
 ### 🚪 API (AWS)
 [![AWS](https://img.shields.io/badge/API_Gateway-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://qt6hwpaad0.execute-api.us-east-1.amazonaws.com/dev/api)
 
-`qt6hwpaad0.execute-api.us-east-1.amazonaws.com/dev`
+`qt6hwpaad0.execute-api.us-east-1.amazonaws.com/dev/api`
 
 </td>
 </tr>
