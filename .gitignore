@@ -1,0 +1,68 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+dist/
+
+# Next.js
+.next/
+out/
+build/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.pytest_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+
+# CDK / Infrastructure
+cdk.out/
+.cdk.staging
+cdk-outputs.json
+infrastructure/cdk.out/
+infrastructure/*.js
+infrastructure/*.d.ts
+!infrastructure/jest.config.js
+
+# Lambda
+lambda/layers/*/python/
+frontend-build/
+
+# AWS
+*.pem
+.aws/
+
+# Otros
+*.tsbuildinfo
+.vercel
