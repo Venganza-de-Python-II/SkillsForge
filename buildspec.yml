@@ -1,0 +1,45 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies..."
+      - npm install -g aws-cdk
+      - pip install --upgrade pip
+      
+  pre_build:
+    commands:
+      - echo "Running tests..."
+      - bash scripts/run-tests.sh
+      - echo "CDK synth validation..."
+      - cd infrastructure && npm install && npm run synth
+      
+  build:
+    commands:
+      - echo "Building Next.js frontend..."
+      - cd ..
+      - npm install
+      - npm run build
+      - echo "Copying build to infrastructure..."
+      - mkdir -p infrastructure/frontend-build
+      - cp -r .next/* infrastructure/frontend-build/ || true
+      
+  post_build:
+    commands:
+      - echo "Deploying with CDK..."
+      - cd infrastructure
+      - npm run cdk -- deploy --all --require-approval never -c environment=$ENVIRONMENT
+      - echo "Deployment completed!"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: infrastructure
+
+cache:
+  paths:
+    - 'node_modules/**/*'
+    - 'infrastructure/node_modules/**/*'
