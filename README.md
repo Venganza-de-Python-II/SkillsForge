@@ -875,7 +875,7 @@ flowchart LR
 ## 💰 Costos
 
 > [!NOTE]
-> Todo el proyecto opera dentro del **AWS Free Tier** 🎉
+> Todo el proyecto opera dentro del **AWS Free Tier** actualmente
 
 | Servicio | Uso Mensual Free | Nuestro Uso |
 |----------|------------------|-------------|
