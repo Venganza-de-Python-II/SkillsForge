@@ -541,7 +541,7 @@ export default function Landing() {
                       Consulta todos los endpoints disponibles y su documentación en formato JSON:
                     </p>
                     <a
-                      href={`${API_BASE_URL}/api`}
+                      href="/api-docs"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
