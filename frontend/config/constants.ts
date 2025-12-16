@@ -2,8 +2,8 @@
 
 // Config de la API
 export const API_CONFIG = {
-  // URL del backend (AWS o local)
-  BASE_URL: process.env.NEXT_PUBLIC_API_URL || 'https://api-dev.skillsforge.com/dev',
+  // URL del backend (AWS API Gateway)
+  BASE_URL: process.env.NEXT_PUBLIC_API_URL || 'https://qt6hwpaad0.execute-api.us-east-1.amazonaws.com/dev',
   TIMEOUT: 30000, // 30 segundos
   MAX_RETRIES: 3,
 } as const;
