@@ -609,7 +609,7 @@ flowchart LR
 
 <br/>
 
-## ✅ Requisitos Cumplidos
+## ✅ Requisitos que se Solicitaron para el Proyecto Final
 
 <table>
 <tr>
