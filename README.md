@@ -732,7 +732,7 @@ flowchart LR
 
 ```bash
 # 1. Clonar repositorio
-git clone https://github.com/tu-usuario/skillsforge.git
+git clone https://github.com/Venganza-de-Python-II/SkillsForge.git
 cd skillsforge
 
 # 2. Instalar dependencias
