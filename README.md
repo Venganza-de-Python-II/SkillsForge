@@ -889,6 +889,25 @@ flowchart LR
 | **Vercel** | 100GB bandwidth | ~1GB ✅ |
 | **Bedrock Nova** | Free tier | ✅ |
 
+## 💸 Costos estimados en Producción
+
+> [!NOTE]
+> Escenario: uso moderado en producción (≈100K usuarios/mes, tráfico constante)
+
+| Servicio | Supuesto de Uso en Producción | Costo Estimado Mensual (USD) |
+|--------|-------------------------------|------------------------------|
+| AWS Lambda | ~2M requests | ~$0.40 |
+| API Gateway (REST) | ~2M requests | ~$7.00 |
+| DynamoDB (On-Demand) | ~5 GB + lecturas/escrituras | ~$3.00 |
+| Amazon Cognito | ~20K MAU | ~$11.00 |
+| EventBridge | ~2M eventos | ~$2.00 |
+| SNS | ~50K notificaciones | ~$1.00 |
+| CloudWatch | Logs + métricas | ~$2.00 |
+| AWS WAF | Web ACL + reglas | ~$6.00 |
+| Amazon Bedrock (Nova) | Uso ligero | ~$5.00 |
+| **Vercel (Pro)** | Tráfico alto | ~$20.00 |
+| **Total Aproximado** |  | **~$57 USD / mes** |
+
 <br/>
 
 ## 🤝 Contribuir
