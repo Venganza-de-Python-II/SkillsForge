@@ -912,7 +912,7 @@ git push origin feature/nueva-funcionalidad
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia Apache License 2.0. Ver [LICENSE](Apache License 2.0) para más detalles.
+Este proyecto está bajo la licencia Apache License 2.0. Ver [LICENSE](https://github.com/Venganza-de-Python-II/SkillsForge/blob/main/LICENSE) para más detalles.
 
 <br/>
 
