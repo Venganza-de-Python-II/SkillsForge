@@ -258,36 +258,20 @@ Vercel simplifica este proceso al manejar todo el entorno automáticamente.
 <br/>
 
 ```mermaid
-erDiagram
-    WORKSHOPS ||--o{ REGISTRATIONS : tiene
-    USERS ||--o{ REGISTRATIONS : hace
+flowchart LR
+    subgraph Entidades
+        W["🎓 WORKSHOPS"]
+        U["👤 USERS"]
+        R["📝 REGISTRATIONS"]
+    end
     
-    WORKSHOPS {
-        string PK
-        string SK
-        string nombre
-        string descripcion
-        int cupo_maximo
-        int inscritos
-        date fecha
-        string categoria
-    }
-    
-    USERS {
-        string PK
-        string SK
-        string nombre
-        string role
-        date created_at
-    }
-    
-    REGISTRATIONS {
-        string PK
-        string SK
-        string workshop_nombre
-        date fecha_registro
-    }
+    W -->|"1:N"| R
+    U -->|"1:N"| R
 ```
+
+**Relaciones:**
+- Un **Taller** tiene muchas **Inscripciones**
+- Un **Usuario** tiene muchas **Inscripciones**
 
 </details>
 
