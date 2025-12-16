@@ -928,7 +928,7 @@ git push origin feature/nueva-funcionalidad
 
 ## 📄 Licencia
 
-Este proyecto está bajo la licencia MIT. Ver [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la licencia Apache License 2.0. Ver [LICENSE](Apache License 2.0) para más detalles.
 
 <br/>
 
