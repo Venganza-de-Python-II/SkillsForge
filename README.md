@@ -21,7 +21,8 @@
 
 <p align="center">
   <a href="#-demo">Demo</a> •
-  <a href="#-por-qué-vercel">Por qué Vercel</a> •
+  <a href="#%EF%B8%8F-arquitectura">Arquitectura</a> •
+  <a href="#-por-qu%C3%A9-vercel-y-no-s3">Por qué Vercel</a> •
   <a href="#-api">API</a> •
   <a href="#-flujos-internos">Flujos</a> •
   <a href="#-requisitos-cumplidos">Requisitos</a>
@@ -190,44 +191,44 @@ flowchart TB
 ## 🚀 Por qué Vercel (y no S3)
 
 > [!IMPORTANT]
-> **S3 no puede ejecutar Next.js 15.** Punto. S3 solo guarda y sirve archivos estáticos (HTML, CSS, JS, imágenes). Pero Next.js 15 con App Router necesita ejecutar código en el servidor para funcionar.
+> **S3 no es compatible con Next.js 15 usando App Router.**  
+> S3 únicamente sirve contenido estático, mientras que Next.js 15 requiere ejecutar código del lado servidor.
 
 ### El problema
 
-Nuestro frontend usa cosas que necesitan un servidor corriendo:
+Este frontend utiliza características que necesitan un runtime activo:
 
-- **Server Components** - React se ejecuta en el servidor, no en el navegador
-- **Server Actions** - Funciones que corren en el servidor desde un botón
-- **Rutas dinámicas** - Páginas que se generan al momento de la petición
-- **Middleware** - Código que corre antes de cada request
+- **Server Components** – Renderizado en el servidor
+- **Server Actions** – Lógica ejecutada desde la UI
+- **Rendering dinámico** – Generación de páginas por request
+- **Middleware** – Ejecución previa a cada solicitud
 
-S3 es un bucket de archivos. No ejecuta código. Es como querer correr un programa de Python en una carpeta de Google Drive - simplemente no funciona.
+S3 no puede ejecutar código ni manejar lógica en tiempo de ejecución, por lo que no lo usamos ya que no cumple con nuestras necesidades en nuestro caso.
 
 ### La solución
 
-Vercel es de los mismos que crearon Next.js, así que lo soportan al 100%:
+Vercel ofrece soporte nativo para Next.js y provee los runtimes necesarios sin configuración adicional:
 
-| Qué necesitamos | S3 | Vercel |
-|-----------------|:--:|:------:|
+| Requisito | S3 | Vercel |
+|----------|:--:|:------:|
 | Server Components | ❌ | ✅ |
 | Server Actions | ❌ | ✅ |
-| Páginas dinámicas | ❌ | ✅ |
+| Rendering dinámico | ❌ | ✅ |
 | Middleware | ❌ | ✅ |
 
 <details>
-<summary><b>¿Y si quiero quedarme en AWS?</b></summary>
+<summary><b>Alternativas dentro de AWS</b></summary>
 
-Hay opciones, pero son más complicadas:
 
-- **AWS Amplify** - Funciona pero tiene sus limitaciones con Next.js 15
-- **Lambda@Edge + S3** - Posible pero un dolor de cabeza configurarlo
-- **ECS/Fargate** - Muy overkill para esto, y ya no es serverless de verdad
+Es posible implementar Next.js en AWS, pero con mayor complejidad operativa:
 
-Vercel hace todo esto automático con un `git push`.
+- **AWS Amplify** – Soporta SSR con ciertas limitaciones
+- **Lambda@Edge + S3** – Arquitectura compleja y difícil de mantener
+- **ECS / Fargate** – Requiere administrar infraestructura adicional
+
+Vercel simplifica este proceso al manejar todo el entorno automáticamente.
 
 </details>
-
-<br/>
 
 ## 📊 Recursos AWS Desplegados
 
