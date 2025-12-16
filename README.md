@@ -37,9 +37,9 @@
 <td>
 
 ### 🖥️ Frontend (Vercel)
-[![Vercel](https://img.shields.io/badge/Ver_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://skills-forge-main.vercel.app)
+[![Vercel](https://img.shields.io/badge/Ver_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://skills-forge.vercel.app)
 
-`skills-forge-main.vercel.app`
+`skills-forge.vercel.app`
 
 </td>
 <td>
