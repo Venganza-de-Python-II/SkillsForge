@@ -54,7 +54,7 @@
 </table>
 
 > [!NOTE]
-> El frontend usa Vercel mientras que el backend está 100% en AWS. Ver [Por qué Vercel](#-por-qué-vercel) para más detalles.
+> El frontend usa Vercel mientras que el backend está 100% en AWS. Ver [Por qué Vercel](#-por-qué-vercel-y-no-s3) para más detalles.
 
 <br/>
 
