@@ -37,15 +37,15 @@
 <td>
 
 ### 🖥️ Frontend (Vercel)
-[![Vercel](https://img.shields.io/badge/Ver_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://skills-forge.vercel.app)
+[![Vercel](https://img.shields.io/badge/Ver_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)]()
 
-`skills-forge.vercel.app`
+``
 
 </td>
 <td>
 
 ### 🚪 API (AWS)
-[![AWS](https://img.shields.io/badge/API_Gateway-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://qt6hwpaad0.execute-api.us-east-1.amazonaws.com/dev/api)
+[![AWS](https://img.shields.io/badge/API_Gateway-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)]()
 
 `qt6hwpaad0.execute-api.us-east-1.amazonaws.com/dev/api`
 
